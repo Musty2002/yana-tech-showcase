@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Zap, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -8,11 +9,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="font-display font-bold text-xl">Yana Tech Labs</span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src={logo} alt="Yana Tech Labs" className="h-10 w-auto" />
             </Link>
             <p className="text-muted-foreground max-w-md">
               Building Intelligent, Scalable, and Impact-Driven Software Solutions.
